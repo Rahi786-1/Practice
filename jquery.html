@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="boot/jquery-3.7.1.js"></script>
+    <style>
+    
+        </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#div3").fadeOut(1000);
+                $("#div2").fadeOut(3000);
+                $("#div1").fadeOut(5000);
+            });
+            $("#btn2").click(function () {
+                $("#div1").fadeIn(1000);
+                $("#div2").fadeIn(2000);
+                $("#div3").fadeIn(3000);
+            });
+                $("#btn3").click(function () {
+                    $("#div1").animate({ right: '250px' });
+                    $("#div2").animate({ right: '250px' });
+                    $("#div3").animate({ right: '250px' });
+
+                });
+                $("#btn4").click(function () {
+                    $("#div1").toggle(1000);
+                    $("#div2").toggle(1000);
+                    $("#div3").toggle(1000);
+
+                });
+            });
+    
+    </script>
+</head>
+
+<body>
+
+    <p style="display: block; text-align: center;">Demonstrate fadeOut() with different parameters.</p>
+
+    <button id="btn1">Click to fade out boxes </button><br><br>
+    <button id="btn2">Click to fade in boxes</button><br><br>
+    <button id="btn3">Click to animate in boxes</button><br><br>
+    <button id="btn4">Click to toggle in boxes</button><br><br>
+
+
+    <div id="div1" style="width:80px;height:80px;background-color:red; position:absolute"></div><br><br><br><br><br><br>
+    <div id="div2" style="width:80px;height:80px;background-color:green; position: absolute"></div>
+    <br><br><br><br><br><br><br>
+    <div id="div3" style="width:80px;height:80px;background-color:blue; position: absolute"></div>
+    <br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<html>
+    <head>
+        <title>Image tag </title>
+    </head>
+    <body>
+        <img src="poster.jpg" height="" width="" alt="error in loadng image">
+    </body>
+</html>

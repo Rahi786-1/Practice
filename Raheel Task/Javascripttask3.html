@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .highlight {
+            color: rgb(240, 78, 167);
+        }
+
+        .New {
+            color: rgb(20, 66, 219);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="main-title">Welcome To My Web Site</h1>
+    <h2 id="discription">This is a simpe exmaple with javascript</h2>
+
+    <button id="change-title-btn">change title</button>
+    <button id="highlight-text-btn">Highlight Text</button>
+
+    <script>
+        // Function to calculate factorial
+function factorial(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+// Input number from the user
+const number = parseInt(prompt("Enter a number: "));
+
+// Calculate factorial
+const fact = factorial(number);
+
+// Print factorial
+console.log("Factorial of", number, "is", fact);
+
+        const mainTitle = document.getElementById("main-title");
+        const discription = document.getElementById("discription");
+
+        document.getElementById("change-title-btn").addEventListener("click", function () {
+            mainTitle.textContent = "New Title";
+            mainTitle.classList.toggle("New");
+            // New class k color change krny k lia 
+
+        });
+
+        document.getElementById("highlight-text-btn").addEventListener("click", function () {
+            discription.classList.toggle("highlight");
+        });
+    
+
+    </script>
+</body>
+
+</html>

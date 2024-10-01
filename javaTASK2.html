@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="boot/js/bootstrap.min.js" rel="stylesheet">
+</head>
+<style>
+    /* Global styles */
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    /* Container styles */
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /* Header styles */
+    header {
+        background-color: lightblue;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* Main content styles */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    /* Card styles */
+    .card {
+        background-color: #66a8c0;
+        border: 1px solid lightgray;
+        border-radius: 6px;
+        width: 300px;
+        padding: 2rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: lightblue;
+        padding: 1rem;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <!-- example of bootstrap -->
+
+    <div class="row bg-info">
+
+        <div class="col">
+            <ul class="nav justify-content-lg-start ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"></a>
+                    <image src="logo.jpg" width="70" height="70"><b>PTI</b></image>
+                </li>
+            </ul>
+            <ul class="nav justify-content-lg-end ">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item dropdown"> <!-- Added dropdown class -->
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Gallery</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ali</a></li>
+                        <li><a class="dropdown-item" href="#">Osama</a></li>
+                        <li><a class="dropdown-item" href="#">kashif</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link btn btn-outline-danger ">Login</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h1>Best Polictical party in Pakistan</h1>
+                    <h2>We are team of talented designers making websites with Bootstrap</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt, minus ipsam iure
+                            excepturi nobis officiis aperiam quisquam reiciendis odio animi velit voluptas repellendus
+                            at nulla maxime aliquam obcaecati inventore.
+                            Id voluptatem rem blanditiis quam? Sint fugiat cupiditate eaque illo eos repudiandae esse
+                            quibusdam alias atque, deserunt veniam, nesciunt maxime eligendi libero nihil. Accusantium
+                            error amet facilis perspiciatis, necessitatibus cum!
+                            Architecto animi quam quod minima consequuntur alias quia sint recusandae aut
+                            necessitatibus? Deserunt consequatur esse nostrum fugit dolor vero accusantium maiores, et
+                            sunt, unde, officia nesciunt. Earum id esse perferendis.</P>
+                    </div>
+                    <div>
+                        <button class="btn btn-square-pill text-bg-success "> learn more</button>
+                        <button class="btn btn-square-pill text-bg-success"> Info</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section><!-- End Hero -->
+    <!--  -->
+    </div>
+    </div>
+    <div class="container">
+        <main>
+            <div class="card">
+                <h2>Card 1</h2>
+                <p>This is the first card.</p>
+            </div>
+            <div class="card">
+                <h2>Card 2</h2>
+                <p>This is the second card.</p>
+            </div>
+            <div class="card">
+                <h2>Card 3</h2>
+                <p>This is the third card.</p>
+            </div>
+            <div class="card">
+                <h2>Card 4</h2>
+                <p>This is the Fourth card.</p>
+            </div>
+            <div class="card">
+                <h2>Card 5</h2>
+                <p>This is the Fifth card.</p>
+            </div>
+            <div class="card">
+                <h2>Card 6</h2>
+                <p>This is the sixth card.</p>
+            </div>
+            <br><br><br>
+        </main>
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-3 footer-contact">
+                            <h3>About us</h3>
+                            <p>
+                                Punjab <br>
+                                KPK<br>
+                                Balochistan<br>
+                                Sindh <br><br>
+                                <strong>Phone:</strong> 051-9069071<br>
+                                <strong>Email:</strong> info@ptiinsaaf.com<br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-links">
+                            <h4>Quick Access</h4>
+                            <ul>
+                                <a href="#">Home</a>ِ
+                                <br>
+                                <a href="#">Services</a>
+                                <br>
+                                <a href="#">Term of services</a>
+                                <br>
+                                <a href="#">Privacy Policy</a>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 footer-links">
+                            <h4>Our Social Networks</h4>
+                            <p>Instragram<br>facebook<br>twitter<br>Whats app<br>linkedin</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>PTI</span></strong>. All Rights Reserved
+                </div>
+
+            </div>
+        </footer><!-- End Footer -->
+
+    </div>
+</body>
+
+</html>

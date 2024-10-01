@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove All Occurrences</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 300px;
+            background-color: rgb(60, 175, 246);
+        }
+        input, button {
+            padding: 20px;
+            margin: 5px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Remove All Occurrences of an Element</h1>
+    <h2>Array: [1, 2, 1, 5 , 8 , 9, 5, 6 , 9]</h2>
+    <label for="numInput">Enter number to remove: </label>
+    <input type="number" id="numInput">
+    <button onclick="removeNumber()">Remove</button>
+    
+    <div id="result"></div>
+
+    <script>
+        // Function to remove all occurrences of 'num' from the array
+        function removeAllOccurrences(arr, num) {
+            return arr.filter(element => element !== num);
+        }
+
+        // Function to handle the button click and update the result
+        function removeNumber() {
+            const array = [1, 2, 1, 5 , 8 , 9 , 5, 6 , 9];
+            const numInput = document.getElementById('numInput').value;
+            const numToRemove = Number(numInput);
+            
+            const resultArray = removeAllOccurrences(array, numToRemove);
+            document.getElementById('result').textContent = `Resulting Array: [${resultArray.join(', ')}]`;
+        }
+    </script>
+</body>
+</html>

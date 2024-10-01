@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+        #demo,
+        p,
+        h2,
+        button {
+            color: #2fe438;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            align-items: center;
+            text-align: center;
+        }
+
+        #p,
+        h2,
+        button,img {
+            color: #040404;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            align-items: center;
+            text-align: center;
+            display: flex;
+        }
+    </style>
+        <h2> JavaScript</h2>
+
+    <p id="demo"></p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.<br><br></button>
+        <br><br><br>
+
+        <img src="image123.jpg" height="50%" width="50%" alt= "error in loadng image">
+
+    <script>
+        setTimeout(function () {
+            location.reload()
+        }, 10000);
+    </script>
+</body>
+
+</html>

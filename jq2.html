@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="boot/jquery-3.7.1.js"></script>
+<title>Form Validation with jQuery and AJAX</title>
+<style>
+    .error {
+        color: red;
+        background-color:aqua;
+    }
+    #myForm{
+         align-content: center;
+         text-align: center;
+         background-color:rgb(104, 110, 237);
+
+         /* border: 1px solid black; */
+         padding-top: 50px;
+         padding-bottom: 50px;
+    }
+</style>
+</head>
+<body>
+
+<form id="myForm" >
+    <h1><u> Registration Form</h1>
+    <label for="name">Name:  </label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="address">Address:  </label><br>
+    <input type="text" id="address" name="address"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<div id="errorMessages"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#myForm").submit(function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+            
+            // Clear previous error messages
+            $("#errorMessages").empty();
+            
+            // Validate form fields
+            var name = $("#name").val();
+            var address = $("#address").val();
+            var email = $("#email").val();
+            var password = $("#password").val();
+            var errors = [];
+
+            if (name.length < 3) {
+                errors.push("Name must be at least 3 characters long.");
+            }
+            if (address.length < 20 ||  address.length > 50) {
+                errors.push("Address must be at least 20 characters long and less than 50 characters .");
+            }
+            if (!email.includes("@")) {
+                errors.push("Invalid email address.");
+            }
+
+            if (password.length < 6) {
+                errors.push("Password must be at least 6 characters long.");
+            }
+
+            // Display error messages
+            if (errors.length > 0) {
+                $("#errorMessages").addClass("error");
+                errors.forEach(function(error) {
+                    $("#errorMessages").append("<p>" + error + "</p>");
+                });
+            } else {
+                // AJAX form submission
+                // $.ajax({
+                //     url: "submit.php",
+                //     type: "POST",
+                //     data: $("#myForm").serialize(),
+                //     success: function(response) {
+                //         // Handle success response
+                        alert("Form submitted successfully!");
+                    // },
+                    // error: function(xhr, status, error) {
+                    //     // Handle error response
+                    //     alert("An error occurred while submitting the form.");
+                    // }
+                // });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

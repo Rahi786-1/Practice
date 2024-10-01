@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="boot/jquery-3.7.1.js"> </script>
+</head>
+
+<body>
+    <p style="display: none; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum
+        et culpa quod. Veniam minima odit beatae. Velit exercitationem illo distinctio? Nihil sunt nulla ab quibusdam
+        soluta, quidem exercitationem minus.
+        Sunt, corporis nisi? Quam, facilis eaque! Iusto sint, laboriosam libero temporibus dolores placeat quia, iste
+        magnam adipisci officia doloribus beatae sit repudiandae facere nisi! Dolorum provident atque voluptatum
+        accusamus corporis.</p>
+    <div id="div1" style="width: 80px;height: 80px;display: inline-flex;color: blue;">abc</div>
+    <div id="div2" style="width: 80px;height: 80px;display: inline-flex;color: blue;">abc</div>
+    <div id="div3" style="width: 80px;height: 80px;display: inline-flex;color: blue;">abc</div>
+
+    <button id="click">hide</button>
+    <button id="dblclick">show</button>
+    <button id="museentr">style</button>
+    <button id="mouseleave">mouseleave</button>
+    <button id="mouseenter">mouseenter</button>
+    <button id="rightclick">rightclick</button>
+    <button id="fadein">fadein</button>
+    <button id="fadeout">fadeout</button>
+
+
+</body>
+<script>
+
+    $(document).ready(function () {
+        $("#click").click(function () {
+            $("p").hide();
+        });
+        $("#dblclick").dblclick(function () {
+            $("p").show();
+        });
+        $("#museentr").mouseenter(function () {
+            $("p").css("font-size", "4vh",);
+        });
+        $("#mouseleave").mouseleave(function () {
+            $("p").show();
+        });
+        $("#rightclick").contextmenu(function () {
+            $("p").show();
+        });
+
+        $("#mouseenter").mouseenter(function () {
+            $("p").hide();
+        });
+
+        $("#fade").click(function () {
+            $("p").fadeIn();  //slow,3000
+        });
+        $("button").click(function () {
+            $("#div1").fadeIn()
+            $("#div2").fadeIn("slow")
+            $("#div3").fadeIn(3000) //3 sec
+        });
+        $("#fadeout").click(function(){
+             $("#div1").fadeOut("slow");
+        });
+        $("button").click(function(){
+            $("div1").animate({left: '250px'});
+        })
+    });
+</script>
+
+</html>

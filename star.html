@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.star {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid red;
+  position: relative;
+  animation: blinker 1s infinite;
+  align-items: center;
+}
+
+.star:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 80px solid red;
+  top: -40px;
+  left: -50px;
+  align-items: center;
+}
+
+@keyframes blinker {
+  100% {
+    align-items: center;
+    opacity: -10;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 align="center">CSS Star Blinking Animation</h1>
+
+<div class="star"></div>
+
+<p align="center"><b>Note:</b> The star will blink continuously.</p>
+
+</body>
+</html>

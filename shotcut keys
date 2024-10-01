@@ -1,0 +1,84 @@
+
+    <!-- example of broostrap
+    alt shift f for 
+    a.navlink
+    Alt shift down  -->
+    <!-- .container-fluid.bg-warning -->
+td ... row 
+tr ...col
+<!-- ///// variable in java 
+const var let -->
+<!-- document.write("<br> Total number is equal to" + '  ' +total) 
+         is lia use koi b cheez priint krwani ho -->
+         
+         
+         <!-- <yeh is lia use hoga k hum id k through b krr skty hain id 1 specific ko access krr skty hain 
+         !-- <body>
+            <h1> Javascript Arithematic</h1>
+          <p id="demo"></p> 
+        
+        <script>
+                
+                s5 = 12
+                s6 = 13
+                total = s5 - s6
+                document.getElementById("demo").innerHTML =  "<br> Total number is equal to" + '  ' +total;
+        </script>   --> -->
+
+        <!-- yeh console maiprint krwata a console.write(" raheel")
+            console mai print krwata h>
+
+            embed 
+            internal ////
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+            </head>
+
+            <script>
+              
+            </script>
+            <body>
+            <script>
+              
+            </script>
+              
+            </body>
+            </html>
+            external.....
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+              <script>  </script>
+
+            </head>
+            <body>
+              
+            </body>
+            </html>
+            ////////////////////////
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+            </head>
+            <body>
+              <p id="sum"></p>
+              <script>
+            let mar=5;
+            mar=5;
+            document.getElemnetbyid("sum").innerHTML=mar;
+              </script>
+            </body>
+            </html>

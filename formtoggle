@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Table Example</title>
+    <!-- Bootstrap CSS -->
+    
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h3>Model Example</h3>
+        <p>click here </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Open Model
+        </button>
+    </div>
+
+    <!-- the model -->
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content">
+                <!--         
+         MODEL HEADER  -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Example</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+                <!-- model body  -->
+                <div class="modal-body">
+                    Modal body
+                </div>
+
+                <!-- MODEL FOOTER  -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+    <script src="boot/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <h1> Javascript Promptexample</h1>
+    <p id="welcome-message">welcome to our page</p>
+    <button id="get-name-btn">Enter your name</button>
+    <script>
+        const welcomeMessage = document.getElementById("welcome-message");
+        document.getElementById("get-name-btn").addEventListener("click", function() {
+            //   prompt the user for their name
+            const userName = prompt("Whats your name");
+            if (userName) {
+                // if username provide by username 
+                welcomeMessage.textContent = 'welcome' + ' ' + ' ' + userName;
+            }
+            else {
+                // if the user cancelled or provided an empty input
+                welcomeMessage.textContent = "welcome to our site";
+            }
+        })
+    </script>
+
+</body>
+
+</html>

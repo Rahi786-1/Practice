@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea, input[type=checkbox], input[type=radio] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: dashed;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  border:groove;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+</style>
+</head>
+<body>
+
+<h3 align="center">Contact Form</h3>
+
+<div class="container">
+  <form id="contactForm">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+    <label>Interests:</label><br>
+    <input type="checkbox" id="interest1" name="interest[]" value="sports">
+    <label for="interest1">Sports</label><br>
+    <input type="checkbox" id="interest2" name="interest[]" value="music">
+    <label for="interest2">Music</label><br>
+    <input type="checkbox" id="interest3" name="interest[]" value="movies">
+    <label for="interest3">Movies</label><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+
+    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+    <label for="subscribe">Subscribe to our newsletter</label><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event){
+  event.preventDefault(); // Prevent default form submission
+
+  // Show pop-up notification
+  alert("Thank you! Your form has been submitted.");
+
+  // You can add additional logic here, such as submitting the form data via AJAX
+  
+  // Optionally, you can reset the form after submission
+  this.reset();
+});
+</script>
+
+</body>
+</html>
